@@ -112,60 +112,12 @@ function App() {
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
       {/* Header */}
       <header className="bg-white shadow-sm sticky top-0 z-50">
-        <div className="container mx-auto px-4 py-4 flex items-center justify-between">
+        <div className="container mx-auto px-4 py-4 flex items-center justify-center">
           <img src={logoTransparente} alt="Nitro Academy" className="h-12" />
-          <nav className="hidden md:flex space-x-8">
-            <a href="#home" className="text-gray-700 hover:text-orange-500 transition-colors">Início</a>
-            <a href="#tracks" className="text-gray-700 hover:text-orange-500 transition-colors">Trilhas</a>
-            <a href="#about" className="text-gray-700 hover:text-orange-500 transition-colors">Sobre</a>
-            <a href="#contact" className="text-gray-700 hover:text-orange-500 transition-colors">Contato</a>
-          </nav>
-          <Button className="bg-orange-500 hover:bg-orange-600">
-            Faça parte da Nitro
-          </Button>
         </div>
       </header>
 
-      {/* Hero Section */}
-      <section id="home" className="py-20 px-4">
-        <div className="container mx-auto text-center">
-          <div className="mb-8">
-            <img src={logoFraseAzul} alt="Nitro Academy - Transforme tempo livre em talento" className="mx-auto h-24 mb-8" />
-          </div>
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">
-            <span className="text-orange-500">Transforme</span><br />
-            <span className="text-gray-800">tempo livre</span><br />
-            <span className="text-orange-500">em talento</span>
-          </h1>
-          <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
-            A Nitro Academy é uma escola online de projetos de iniciação vocacional para adolescentes entre 12 a 17 anos através de projetos práticos e estimulantes orientados por mentores experientes.
-          </p>
-          <Button size="lg" className="bg-orange-500 hover:bg-orange-600 text-lg px-8 py-4">
-            Conheça nossas trilhas
-            <ArrowRight className="ml-2 h-5 w-5" />
-          </Button>
-        </div>
-      </section>
 
-      {/* Benefits Section */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">Por que escolher a Nitro?</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {benefits.map((benefit, index) => (
-              <Card key={index} className="text-center hover:shadow-lg transition-shadow">
-                <CardHeader>
-                  <benefit.icon className="h-12 w-12 text-orange-500 mx-auto mb-4" />
-                  <CardTitle className="text-lg">{benefit.title}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-gray-600">{benefit.description}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Tracks Section */}
       <section id="tracks" className="py-20 px-4">
@@ -288,20 +240,6 @@ function App() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section id="contact" className="py-20 bg-gradient-to-r from-orange-500 to-red-500">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl font-bold text-white mb-6">
-            Pronto para transformar seu tempo livre em talento?
-          </h2>
-          <p className="text-xl text-orange-100 mb-8 max-w-2xl mx-auto">
-            Junte-se à Nitro Academy e descubra suas habilidades através de projetos práticos e mentores experientes.
-          </p>
-          <Button size="lg" className="bg-white text-orange-500 hover:bg-gray-100 text-lg px-8 py-4">
-            Faça parte da Nitro Academy
-          </Button>
-        </div>
-      </section>
 
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-12">
