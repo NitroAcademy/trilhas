@@ -224,7 +224,7 @@ function App() {
             </p>
             <div className="grid md:grid-cols-3 gap-8 mt-12">
               <div className="text-center">
-                <div className="text-3xl font-bold text-orange-500 mb-2">40+</div>
+                <div className="text-3xl font-bold text-orange-500 mb-2">32+</div>
                 <p className="text-gray-600">Cursos Disponíveis</p>
               </div>
               <div className="text-center">
@@ -257,6 +257,7 @@ function App() {
       </footer>
     </div>
   )
-}//
+}
+
 export default App
 
